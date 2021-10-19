@@ -11,11 +11,12 @@ public class Soldado {
     //Equipo 1: Primer equipo
     //Equipo 2: Segundo Equipo
     
-    public void setSoldado(String nombre, int Vida, int fila, int columna){
+    public void setSoldado(String nombre, int Vida, int fila, int columna, int equi){
         Nom = nombre;
         puntoVida = Vida;
         Fila = fila;
         Columna = columna;
+        Equipo = equi;
     }
     
     public String getNom(){
@@ -32,5 +33,9 @@ public class Soldado {
     
     public int getColumna(){
         return Columna;
+    }
+    
+    public int getEqui(){
+        return Equipo;
     }
 }
